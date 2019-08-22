@@ -1,0 +1,875 @@
+/*
+  Theme Name: Name - Pizzaro Food HTML Template
+  Author: Redwan Hussain
+  Support: bdredwan550@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer 
+*/
+
+
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800|Yanone+Kaffeesatz:300,400,700&display=swap');
+
+/* 1. Theme default css */
+/* theme Default Color */
+:root {
+	--theme-color: #c00a27;
+	--btn-color: #f0002f; 
+}
+
+
+ body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+a,
+.button,button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:hover{
+	text-decoration: none;
+}
+a:focus,
+button:focus,input:focus, textarea:focus {
+	text-decoration: none;
+	outline: none;
+}
+button{cursor: pointer}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', sans-serif;
+	color: #2d2b2d;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: capitalize
+}
+
+h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+}
+h2 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 23px;
+	color: #71706c;
+	margin-bottom: 15px;
+}
+a{
+	color: #9b959b;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+.custom-row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+/* Section Title */
+.section-title {
+	border-bottom: 2px solid #e9e9e9;
+	margin-bottom: 80px;
+}
+.section-title h2 {
+	font-size: 36px;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	margin-bottom: 0;
+	line-height: 36px;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+.section-title h2:before {
+	position: absolute;
+	content: "";
+	background-color: var(--btn-color);
+	width: 120px;
+	height: 4px;
+	bottom: -2px;
+	left: 50%;
+	margin-left: -60px;
+}
+
+
+
+/* Default button */
+.default-btn {
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	background-color: var(--btn-color);
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 700;
+	width: 210px;
+	height: 50px;
+	border: 2px solid transparent;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+}
+a.default-btn:hover {
+	color: var(--btn-color);
+	border-color: var(--btn-color);
+	background-color: #fff;
+}
+.default-btn > i {
+	font-size: 17px;
+	margin-right: 15px;
+}
+
+
+/* Default bg color */
+.theme-bg {
+	background-color: var(--theme-color);
+}
+
+/* Custom css start */
+
+/********** Home Page 01 Start  **********/
+/* Header Top */
+.header-top-wrap {
+	padding: 30px 0;
+	border-bottom: 2px solid #CB334B;
+}
+.header-logo {
+	padding-top: 10px;
+}
+/* Header Top Menu */
+.header-top-menu ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.header-top-menu ul li:last-child {
+	margin-right: 5px;
+}
+
+.header-top-menu ul li:first-child {
+	margin-left: 0;
+}
+
+.header-top-menu ul li a {
+	display: block;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+	font-size: 15px;
+	line-height: 34px;
+}
+
+.header-top-menu ul li a:before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 2px;
+	left: calc(50% - 20px);
+	bottom: 0;
+	background-color: #ffae00;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+.header-top-menu ul li a:hover:before {
+	width: 40px;
+}
+/* Header Top right Option */
+.call-number {
+	margin-right: 30px;
+	text-align: right;
+}
+.call-number label {
+	color: #ffae00;
+	font-size: 14px;
+	margin-bottom: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.call-number select {
+	background-color: transparent;
+	color: #fff;
+	font-size: 14px;
+	line-height: 32px;
+	text-transform: capitalize;
+	border: none;
+}
+
+.call-number select option {
+	color: #000;
+}
+
+.call-number select:focus {
+	outline: 0;
+}
+
+.call-number h3 {
+	color: #fff;
+	font-weight: 800;
+	line-height: 32px;
+	margin-bottom: 0;
+}
+.header-cart ul li {
+	position: relative;
+}
+.header-cart ul li a {
+	display: inline-block;
+	text-align: center;
+	width: 225px;
+	font-size: 14px;
+	height: 70px;
+	color: #fff;
+	line-height: 70px;
+	text-transform: capitalize;
+	background-color: #8ca93e;
+	border-radius: 50px;
+	position: relative;
+}
+
+.header-cart ul li a i {
+	font-size: 16px;
+	margin-right: 10px;
+}
+.header-cart ul li a:before {
+	position: absolute;
+	content: "";
+	background-color: #226f0b;
+	height: 3px;
+	width: 136px;
+	bottom: 15px;
+	left: calc(50% - 65px);
+}
+.header-cart ul li a:after {
+	position: absolute;
+	content: "";
+	background: linear-gradient(30deg,transparent 40px,#fff 40px),linear-gradient(-45deg,transparent 40px,#fff 40px),linear-gradient(45deg,transparent 34px,#fff 34px),linear-gradient(-45deg,transparent 34px,#fff 34px);
+	background-size: 8px calc(100% + 34px);
+	padding-bottom: 11px;
+	bottom: 4px;
+	left: calc(50% - 64px);
+	width: 135px;
+	height: 0;
+}
+
+/* Header Top End */
+
+/* Main Menu Start */
+nav.main-menu ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	line-height: 34px;
+	color: #ffc0ca;
+	display: flex;
+}
+
+nav.main-menu ul li a i {
+	font-size: 30px;
+	margin-right: 20px;
+}
+
+nav.main-menu ul li a:hover {
+	color: #fff;
+}
+
+.main-menu-wrapper {
+	padding: 35px 0;
+}
+/* Main Menu Start */
+
+/* Slider Area */
+section.slider-area-wrapper {
+	min-height: 635px;
+}
+.slider-area-wrapper{
+	background-color: var(--theme-color);
+	background-size: cover;
+	background-position: center bottom;
+}
+.slider-content {    
+	padding-top: 120px;
+	transform: skewY(-6deg);
+	-webkit-transform: skewY(-6deg);
+	-moz-transform: skewY(-6deg);
+	-ms-transform: skewY(-6deg);
+	-o-transform: skewY(-6deg);
+}
+.slider-small-title {
+	position: relative;
+}
+
+.slider-small-title:before,.slider-small-title:after {
+	position: absolute;
+	content: "";
+	border: 1px solid #fff;
+	height: 2px;
+	top: 50%;
+	margin-top: -2px;
+}
+.slider-small-title:after {
+	right: 8px;
+	width: 125px;
+}
+
+.slider-small-title:before {
+	left: 55px;
+	width: 105px;
+}
+.slider-small-title h3 {
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	display: inline-block;
+	line-height: 65px;
+	margin-bottom: 0;
+	font-style: italic;
+}
+.slider-small-title span {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	display: inline-block;
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	background-color: #ffae00;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 70px;
+	letter-spacing: 1px;
+	margin-right: 10px;
+}
+.slider-title h1 {
+	color: #fff;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 140px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	line-height: 130px;
+	font-style: italic;
+}
+.slider-title h2 {
+	color: #fff;
+	font-size: 82px;
+	line-height: 60px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+.slider-title h2:after {
+	position: absolute;
+	content: "";
+	width: 300px;
+	border-bottom: 2px dashed #fff;
+	left: calc(50% - 150px);
+	bottom: 0;
+	height: 5px;
+}
+.slider-title p {
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	line-height: 22px;
+	margin-bottom: 0;
+	font-style: italic;
+}
+.hero-area-slider {
+	position: relative;
+}
+ul.slick-dots {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	text-align: center;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+ul.slick-dots li {
+	display: inline-block;
+}
+ul.slick-dots li button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: none;
+	background-color: #fff;
+	margin: 0 8px;
+}
+ul.slick-dots li.slick-active button {
+	width: 35px;
+	height: 10px;
+	background-color: #f0002f;
+	border-radius: 50px;
+}
+/* Slider Area End */
+
+/* Banner Section */
+
+.single-banner-item {
+	background-color: var(--theme-color);
+	background-size: cover;
+	background-position: center;
+	height: 210px;
+	transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	-o-transform: scale(1.01);
+	background-color: #fff;
+}
+.single-banner-item.big-title {
+	height: 100%;
+	padding-top: 50px;
+	padding-left: 40px;
+}
+
+.single-banner-item:hover {
+	cursor: pointer;
+}
+
+
+.banner-title h2 {
+	font-size: 80px;
+	line-height: 60px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.banner-title.d-f h2 {
+	display: flex;
+}
+.banner-title h3 {
+	font-size: 42px;
+	line-height: 42px;
+	color: #fff;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: -0.9px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.banner-title > a {
+	width: 138px;
+	height: 45px;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	background-color: var(--btn-color);
+	text-align: center;
+	line-height: 45px;
+	margin-top: 10px;
+	border-radius: 6px;
+	border: 2px solid transparent;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+.banner-title a:hover {
+	color: var(--btn-color);
+	border-color: var(--btn-color);
+	background-color: #fff;
+}
+.single-banner-item {
+	position: relative;
+}
+
+.single-banner-item .banner-footer {
+	position: absolute;
+	left: 40px;
+	bottom: 20px;
+}
+
+.single-banner-item .banner-footer > a {
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 400;
+}
+.banner-title p {
+	color: #fff;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+.banner-title h2 > span {
+	color: #fdba3e;
+	font-size: 36px;
+	line-height: 26px;
+	display: inline-block;
+	margin-right: 5px;
+}
+/* Banner Section End */
+
+
+/* Product Slider Area */
+.product-slider-active .slick-slide:focus {
+	outline: 0;
+}
+.product-slider-content h4 {
+	font-size: 26px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+
+.product-slider-content p {
+	font-style: italic;
+	margin-bottom: 0;
+}
+
+.product-slider-content {
+	padding: 0 20px;
+}
+
+.product-slider-img img {
+	display: inline-block;
+}
+
+.product-slider-img {
+	max-height: 300px;
+}
+
+.slider-product-price span.discount {
+	font-weight: 500;
+	font-size: 18px;
+	color: #2d2b2d;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.slider-product-price span.price {
+	background-color: #ffcd00;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 500;
+	padding: 4px 15px;
+	display: inline-block;
+	line-height: 24px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.slider-product-price {
+	margin-bottom: 30px;
+}
+
+.product-slider-content {
+	padding-bottom: 20px;
+}
+.product-slider-btn .default-btn {
+	border-radius: 60px;
+	width: 245px;
+	height: 55px;
+	line-height: 55px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+}
+.single-product-slider {
+	border: 5px solid transparent;
+	padding-bottom: 50px;
+	padding-top: 15px;
+	transition: 0.8s ease-in-out;
+	-webkit-transition: 0.8s ease-in-out;
+	-moz-transition: 0.8s ease-in-out;
+	-ms-transition: 0.8s ease-in-out;
+	-o-transition: 0.8s ease-in-out;
+}
+.single-product-slider:hover {
+	border-color: #e9e9e9;
+}
+
+/* Product Slider Area End */
+
+/* Call To Action Area */
+.cta-area-wrapper {
+	background-color: #282828;
+	background-image: url('../img/home-one/cta-banner-1.png');
+	background-size: cover;
+	background-position: center;
+}
+.cta-content-area h4 {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 200;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 24px;
+	letter-spacing: 1px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.cta-content-area h4:before,.cta-content-area h4:after {
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 2px;
+	top: 50%;
+	background-color: #fff;
+	margin-top: -2px;
+}
+
+.cta-content-area h4:before {
+	left: -110px;
+}
+
+.cta-content-area h4:after {
+	right: -110px;
+}
+.cta-content-area > h1 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 73px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	line-height: 72px;
+}
+.cta-product-name p {
+	color: #c2aa7e;
+	margin-bottom: 0;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.cta-order-btn {
+	margin-top: 30px;
+}
+
+/* Call To Action Area End */
+
+/* Latest Product Area */
+
+
+.single-latest-product {
+	padding-top: 10px;
+	border-top: 2px solid transparent;
+	transition: 0.8s ease-in-out;
+	-webkit-transition: 0.8s ease-in-out;
+	-moz-transition: 0.8s ease-in-out;
+	-ms-transition: 0.8s ease-in-out;
+	-o-transition: 0.8s ease-in-out;
+}
+.single-latest-product:hover {
+	/* border-color: #e9e9e9; */
+	border-color: var(--theme-color);
+}
+.single-latest-product .default-btn {
+	border-radius: 60px;
+	width: 245px;
+	height: 55px;
+	line-height: 55px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transition: 0.6s ease-in-out;
+	-webkit-transition: 0.6s ease-in-out;
+	-moz-transition: 0.6s ease-in-out;
+	-ms-transition: 0.6s ease-in-out;
+	-o-transition: 0.6s ease-in-out;
+}
+.single-latest-product:hover .default-btn {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+.lat-product-img {
+	min-height: 220px;
+}
+
+.lat-product-title h4 {
+	color: #2d2b2d;
+	font-size: 22px;
+	text-transform: capitalize;
+	font-weight: 500;
+	margin-bottom: 0;
+	line-height: 36px;
+}
+.single-latest-product > h5 {
+	font-size: 16px;
+	color: #2b2929;
+	display: inline-block;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom: 0;
+	line-height: 18px;
+	position: relative;
+}
+
+.single-latest-product > h5:before,.single-latest-product > h5:after {
+	position: absolute;
+	content: "";
+	background-color: #ddd;
+	width: 80px;
+	height: 2px;
+	top: 50%;
+	margin-top: -1px;
+}
+
+.single-latest-product > h5:before {
+	left: -90px;
+}
+
+.single-latest-product > h5:after {
+	right: -90px;
+}
+.lat-product-size {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+.lat-product-title {
+	margin-bottom: 20px;
+}
+.single-lat-pro-size:not(:last-child) {
+	margin-right: 20px;
+}
+.single-lat-pro-size span {
+	width: 60px;
+	height: 60px;
+	line-height: 19px;
+	font-size: 14px;
+	padding: 9px;
+	border: 2px solid #f9f2dd;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-weight: 600;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.single-lat-pro-size p {
+	color: #2d2b2d;
+	font-size: 17px;
+	line-height: 22px;
+	margin-bottom: 0;
+	font-weight: 500;
+}	
+
+/* Latest Product Area End */
+
+/* Pizza Banner Area */
+.pizza-banner-wrapper {
+	min-height: 540px;
+	background-size: cover;
+	background-position: center;
+}
+
+.pizza-baner-content {
+	padding-top: 173px;
+}
+.pizza-baner-content h4 {
+	margin-bottom: 10px;
+}
+.pizza-baner-content .default-btn {
+	margin-top: 10px;
+}
+/* Pizza Banner Area End */
+
+/* Service Area */
+.single-service-content .service-icon {
+	height: 90px;
+	margin-bottom: 15px;
+}
+
+.single-service-content .service-text p {
+	margin-bottom: 0;
+}
+/* Service Area End */
+/********** Home Page 01 End  **********/
