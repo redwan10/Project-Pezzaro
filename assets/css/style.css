@@ -873,7 +873,52 @@ ul.slick-dots li.slick-active button {
 }
 /* Service Area End */
 
+/* Social Media Image Section */
+.single-gallary-img {
+	position: relative;
+}
 
+.single-gallary-img a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-200px);
+	font-size: 42px;
+	color: #ffff;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+	margin-top: -20px;
+	margin-left: -20px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.single-gallary-img:before {
+	position: absolute;
+	content: "";
+	background-color: #000;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+	transition: 0.5s;
+}
+
+.single-gallary-img:hover:before {
+	width: 100%;
+	height: 100%;
+}
+
+.single-gallary-img:hover a {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+/* Social Media Image Section ENd */
 
 /* Footer Area Start */
 footer {
@@ -943,7 +988,7 @@ footer {
 }
 #footermapActive {
 	width: 100%;
-	height: 600px;
+	height: 400px;
 }
 /* Footer Area End */
 /********** Home Page 01 End  **********/
