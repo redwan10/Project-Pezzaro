@@ -28,11 +28,11 @@
     margin-right: 0px;
   }
   /* Slider Area */
-  .slider-title h1 {
+  .slider-title h2 {
     font-size: 105px;
     line-height: 105px;
   }
-  .slider-title h2 {
+  .slider-title h3 {
     font-size: 75px;
     line-height: 50px;
   }
@@ -96,11 +96,11 @@
     .slider-small-title::before, .slider-small-title::after {
       display: none;
     }
-    .slider-title h1 {
+    .slider-title h2 {
       font-size: 65px;
       line-height: 70px;
     }
-    .slider-title h2 {
+    .slider-title h3 {
       font-size: 60px;
       line-height: 36px;
       margin-bottom: 0;
