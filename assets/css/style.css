@@ -338,7 +338,26 @@ nav.main-menu ul li a:hover {
 .main-menu-wrapper {
 	padding: 35px 0;
 }
-/* Main Menu Start */
+/* Mobile Menu */
+.mean-container a.meanmenu-reveal span {
+	background: #fff;
+}
+.mean-container a.meanmenu-reveal {
+	top: -25px;
+	color: #fff;
+}
+.mean-container .mean-bar {
+	top: -25px !important;
+}
+.mean-container .mean-nav {
+	margin-top: 50px;
+	background: var(--theme-color);
+}
+.mean-container .mean-nav ul li a i {
+	margin-right: 15px;
+}
+
+/* Main Menu End */
 
 /* Slider Area */
 section.slider-area-wrapper {
